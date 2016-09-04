@@ -12,5 +12,72 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/bem_vindo_ao_android"
+        android:id="@+id/WelcometextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/WelcometextView"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:layout_weight="0.24
+            " />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.24
+            "
+            android:hint="@string/usuario" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.24
+            "
+            android:hint="@string/senha" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.24
+            ">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acessar"
+                android:id="@+id/acessarbutton"
+                android:layout_weight="1"
+                android:hint="@string/usuario" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar"
+                android:id="@+id/cancelarbutton"
+                android:layout_weight="1"
+                android:hint="@string/senha" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
